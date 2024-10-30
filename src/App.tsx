@@ -50,7 +50,10 @@ export default function App() {
   const [theme, setTheme] = useState("light");
   const themes = ["light", "dark", "forest", "night", "aqua", "halloween"];
   return (
-    <section data-theme={theme} className="h-[100vh] w-full flex">
+    <section
+      data-theme={theme}
+      className="h-[100vh] w-full flex flex-col md:flex-row"
+    >
       <select
         title="theme"
         className="select select-bordered max-w-lg m-4 absolute"
@@ -64,10 +67,10 @@ export default function App() {
           </option>
         ))}
       </select>
-      <div className="w-[40%] h-full flex items-center justify-center">
+      <div className="md:w-[40%] md:h-full flex items-center justify-center ">
         <AddTodo addTodo={addTodo} />
       </div>
-      <div className="w-[60%] overflow-scroll">
+      <div className="md:w-[60%] overflow-scroll">
         <Todos todos={todos} onComplete={removeTodo} />
       </div>
     </section>

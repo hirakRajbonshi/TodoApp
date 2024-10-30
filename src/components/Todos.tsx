@@ -18,61 +18,6 @@ const Todos = ({ todos, onComplete }: TodosProps) => {
       {todos.map((todo) => (
         <TodoCard data={todo} onComplete={onComplete} />
       ))}
-      {/* <TodoCard
-        title="Shoes"
-        description="If a dog chews shoes whose shoes does he choose?"
-        time="1"
-      />
-      <TodoCard
-        title="Shoes"
-        description="If a dog chews shoes whose shoes does he choose?"
-        time="1"
-      />
-      <TodoCard
-        title="Shoes"
-        description="If a dog chews shoes whose shoes does he choose?"
-        time="1"
-      />
-      <TodoCard
-        title="Shoes"
-        description="If a dog chews shoes whose shoes does he choose?"
-        time="1"
-      />
-      <TodoCard
-        title="Shoes"
-        description="If a dog chews shoes whose shoes does he choose?"
-        time="1"
-      />
-      <TodoCard
-        title="Shoes"
-        description="If a dog chews shoes whose shoes does he choose?"
-        time="1"
-      />
-      <TodoCard
-        title="Shoes"
-        description="If a dog chews shoes whose shoes does he choose?"
-        time="1"
-      />
-      <TodoCard
-        title="Shoes"
-        description="If a dog chews shoes whose shoes does he choose?"
-        time="1"
-      />
-      <TodoCard
-        title="Shoes"
-        description="If a dog chews shoes whose shoes does he choose?"
-        time="1"
-      />
-      <TodoCard
-        title="Shoes"
-        description="If a dog chews shoes whose shoes does he choose?"
-        time="1"
-      />
-      <TodoCard
-        title="Shoes"
-        description="If a dog chews shoes whose shoes does he choose?"
-        time="1"
-      /> */}
     </div>
   );
 };
