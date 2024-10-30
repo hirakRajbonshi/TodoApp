@@ -46,8 +46,24 @@ export default function App() {
     };
     setTodos((prevTodos = []) => [...prevTodos, newTodo]);
   };
+
+  const [theme, setTheme] = useState("light");
+  const themes = ["light", "dark", "forest", "night", "aqua", "halloween"];
   return (
-    <section data-theme="dark" className="h-[100vh] w-full flex">
+    <section data-theme={theme} className="h-[100vh] w-full flex">
+      <select
+        title="theme"
+        className="select select-bordered max-w-lg m-4 absolute"
+        onChange={(e) => setTheme(e.target.value)}
+        value={theme}
+      >
+        <option disabled>Theme</option>
+        {themes.map((theme: string) => (
+          <option key={theme} value={theme}>
+            {theme.charAt(0).toUpperCase() + theme.slice(1)}
+          </option>
+        ))}
+      </select>
       <div className="w-[40%] h-full flex items-center justify-center">
         <AddTodo addTodo={addTodo} />
       </div>

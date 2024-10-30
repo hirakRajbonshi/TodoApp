@@ -17,6 +17,9 @@ const AddTodo: React.FC<AddTodoProps> = ({ addTodo }) => {
 
   return (
     <div className="flex flex-col gap-2 w-[60%]">
+      <h1 className="text-4xl self-center font-bold font-sans mb-4">
+        TODO APP
+      </h1>
       <input
         type="text"
         placeholder="Todo"
